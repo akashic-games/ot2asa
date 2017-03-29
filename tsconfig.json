@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": false,
+        "outDir": "./lib"
+    },
+    "files": [
+      "node_modules/@akashic/akashic-engine/lib/main.d.ts",
+      "node_modules/@akashic-extension/akashic-animation/lib/index.d.ts",
+      "src/index.ts"
+    ]
+}

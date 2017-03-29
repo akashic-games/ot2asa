@@ -1,0 +1,45 @@
+{
+  "name": "ot2asa",
+  "version": "1.0.0",
+  "description": "Convert OpenToonz sprite sheet to akashic-animation files.",
+  "bin": {
+    "ot2asa": "bin/run"
+  },
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run clean && npm run build",
+    "clean": "rimraf -rf lib",
+    "start": "npm run build && node lib/index.js",
+    "build": "tsc -p .",
+    "lint": "tslint ./src/**/*.ts",
+    "test": "jasmine && npm run lint"
+  },
+  "author": "DWANGO Co., Ltd.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akashic-games/ot2asa.git"
+  },
+  "publishConfig": {
+    "@akashic-extension:registry": "http://registry.npmjs.org/"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "dependencies": {
+    "@akashic-extension/akashic-animation": "~2.7.1",
+    "@akashic/akashic-engine": "~1.12.0",
+    "commander": "^2.9.0",
+    "fs-extra": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.3.31",
+    "@types/fs-extra": "0.0.37",
+    "exists-file": "^3.0.0",
+    "jasmine": "^2.5.3",
+    "rimraf": "^2.6.1",
+    "tslint": "^4.5.1",
+    "typescript": "^2.1.6"
+  }
+}
