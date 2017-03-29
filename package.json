@@ -1,5 +1,5 @@
 {
-  "name": "ot2asa",
+  "name": "@akashic-extension/ot2asa",
   "version": "1.0.0",
   "description": "Convert OpenToonz sprite sheet to akashic-animation files.",
   "bin": {
