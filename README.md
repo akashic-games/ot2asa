@@ -8,6 +8,8 @@ OpenToonzで作成したスプライトシートをakashic-animation形式にコ
 $ npm install -g @akashic-extension/ot2asa
 ```
 
+Akashic Engineの詳細な利用方法については、 [公式ページ](https://akashic-games.github.io/) を参照してください。
+
 # 使い方
 OpenToonzで作成したスプライトシートの情報が書かれたテキストファイルを渡してください。
 
